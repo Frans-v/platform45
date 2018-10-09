@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Register Form</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet/less" href="css/style.less" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
+</head>
+
+<body>
+
+<div class="checkwidth"></div>
+<div class="container">
+	<div class="form_bg">
+		<div class="form_left">
+			<img src="images/page-1.png" srcset="images/page-1@2x.png" alt="User" class="user" />
+			<h1>Front-end challenge!</h1>
+			<p>This is a design that you will need to code up and impress us.</p>
+			<div class="form_left_button">
+				<a href="javascript://" class="open_slidein"><img src="images/group-3.png" srcset="images/group-3@2x.png" alt="Expand" class="circle" /></a>
+			</div>
+		</div>
+		<div class="form_right">
+			<div id="slideout"></div>
+			<form action="" method="post" name="registration">
+				<div class="form__item">
+					<div class="form_inputs_l"><label for="firstname">Name</label></div>
+					<div class="form_inputs_r full"><input type="text" id="firstname" name="firstname" /></div>
+					<div id="errorfirstname" class="msgerror"></div>	
+				</div>
+				<div class="form__item">
+					<div class="form_inputs_l">
+						Gender
+					</div>
+					<div class="form_inputs_r">
+						<div class="male">
+							<input type="radio" name="genderselect" id="male" value="male" class="input-hidden" required />
+							<label for="male">
+								<img src="images/male-icon.png" class="gendericon" />
+								<span>Male</span>
+							</label>	
+						</div>
+						<div class="female">
+							<input type="radio" name="genderselect" id="female" value="female" class="input-hidden" required />
+							<label for="female">
+								<img src="images/female-icon.png" class="gendericon" />
+								<span>Female</span>
+							</label>
+						</div>
+					</div>
+					<div id="errorgenderselect" class="msgerror"></div>
+				</div>
+				<div class="form__item">
+					<div class="form_inputs_l"><label for="date">Date of Birth</label></div>
+					<div class="form_inputs_r full"><input type="text" id="datepicker" name="datepicker" class="date" size="30"></div>
+					<div id="errordatepicker" class="msgerror"></div>
+				</div>
+				<div class="form__item">
+					<div class="form_inputs_l"><label for="email">Email</label></div>
+					<div class="form_inputs_r full"><input type="email" id="email" name="email" /></div>
+					<div id="erroremail" class="msgerror"></div>
+				</div>
+				<div class="form__item">
+					<div class="form_inputs_l"><label for="mobile">Mobile</label></div>
+					<div class="form_inputs_r full"><input type="text" id="mobile" name="mobile" /></div>
+					<div id="errormobile" class="msgerror"></div>
+				</div>
+				<div class="form__item">
+					<div class="form_inputs_l"><label for="id">Customer ID</label></div>
+					<div class="form_inputs_r full"><input type="text" id="id" name="id" /></div>
+					<div id="errorid" class="msgerror"></div>
+				</div>
+				<div class="form__item">
+					<div class="form_inputs_l">
+						Membership
+					</div>
+					<div class="form_inputs_r">
+						<div class="membership">
+							<input type="radio" name="membershipselect" id="classic" value="classic" class="input-hidden" required />
+							<label for="classic">
+								<i class="cardsprite"></i>
+								<span>Classic</span>
+							</label>	
+						</div>
+						<div class="membership">
+							<input type="radio" name="membershipselect" id="silver" value="silver" class="input-hidden" required />
+							<label for="silver">
+								<i class="cardsprite"></i>
+								<span>Silver</span>
+							</label>
+						</div>
+						<div class="membership mem_last">
+							<input type="radio" name="membershipselect" id="gold" value="gold" class="input-hidden" required />
+							<label for="gold">
+								<i class="cardsprite"></i>
+								<span>Gold</span>
+							</label>
+						</div>
+					</div>
+					<div id="errormembershipselect" class="msgerror"></div>
+				</div>
+				<div class="form_buttons">
+					<button class="cancel">Cancel</button>
+					<button class="save" type="submit">Save</button>
+				</div>
+				<br><br>
+			</form>
+		</div>
+		<div class="form_slidein">
+			<h1>My world today</h1>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. <a href="">View all days</a> eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat</p>
+		</div>
+	</div>
+</div>
+	
+<script src="js/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/scripts.js"></script>
+	
+</body>
+</html>
